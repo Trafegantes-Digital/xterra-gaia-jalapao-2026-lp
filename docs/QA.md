@@ -52,3 +52,4 @@ O primeiro `vercel deploy --target preview` num projeto recém-criado foi classi
 - [x] `npm run check`, `npm run build` e `git diff --check` passam; JS do motion implementado no arquivo existente, sem dependências adicionais.
 - [ ] Vídeo definitivo do hero e confirmação de proveniência dos seis PNGs da pasta do cliente.
 - [ ] Homologação visual do motion no preview atualizado.
+- [x] Preview do motion `https://xterra-gaia-jalapao-2026-28q6bc7sz-trafegantes-digital.vercel.app` inspecionado como target `preview`, READY; HTML e `estrada-4x4.webp` responderam 200 via `vercel curl` autenticado, com `noindex`.
