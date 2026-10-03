@@ -1,6 +1,6 @@
 # QA · XTerra Gaia Jalapão 2026
 
-STATUS: Preview funcional verificado; segunda rodada de review e homologação pendentes.
+STATUS: Produção pública verificada; homologação visual/comercial em uso real pendente.
 
 ## Oferta, imagens e layout
 
@@ -24,15 +24,15 @@ STATUS: Preview funcional verificado; segunda rodada de review e homologação p
 
 - [x] Title, description, Open Graph, `noindex` de preview, um H1, headings e alt text.
 - [x] Correções da primeira revisão: CTA fixo fora do foco quando oculto, movimento desligado em `prefers-reduced-motion`, contraste de texto e foco reforçado, fallback estático do WhatsApp, créditos de fotografia visíveis e favicon próprio.
-- [ ] Canonical após definição de domínio.
-- [ ] Open Graph com URL absoluta e imagem de compartilhamento apropriada após definição de domínio.
+- [x] Canonical para o domínio padrão Vercel validado publicamente; atualizar se houver domínio próprio.
+- [x] Open Graph com URL absoluta e JPEG de compartilhamento 1440 × 960 validado em HTTP 200.
 - [x] `npm run check`, `npm run build` e `git diff --check` sem erro; `npm install` sem vulnerabilidades reportadas.
 - [x] Console local sem erros após navegação; HTML, créditos, JS e quatro fotos respondem HTTP 200 na URL de preview via `vercel curl` autenticado.
 - [ ] LCP, CLS e INP medidos em navegação representativa; preview protegido por Vercel Authentication.
 - [x] Preview Vercel funcional em `https://xterra-gaia-jalapao-2026-n8e242mbs-trafegantes-digital.vercel.app` (target preview, READY, `noindex`), com HTML, créditos, favicon e foto principal em HTTP 200 por acesso autenticado da CLI.
-- [ ] Preview aprovado pelo owner.
-- [ ] Remover `noindex`, definir canonical e validar domínio somente no deploy de produção aprovado pelo owner.
-- [ ] Produção somente após aceite do owner.
+- [x] Owner pediu em 03/10/2026 a remoção do topo e dos rótulos, o motion e a publicação da LP atual.
+- [x] `noindex` removido da produção; canonical e domínio padrão Vercel validados. O preview permanece protegido com `X-Robots-Tag: noindex` da Vercel.
+- [x] Produção publicada após o pedido do owner.
 
 ## Revisão independente
 
@@ -49,7 +49,9 @@ O primeiro `vercel deploy --target preview` num projeto recém-criado foi classi
 - [x] Hero com entrada breve e zoom lento; abertura com reveal; experiência e roteiro mantêm troca de imagens pelo scroll. Aba oculta e `prefers-reduced-motion` não deixam conteúdo invisível.
 - [x] `npm run check`, `npm run build` e `git diff --check` passaram. Nenhuma nova dependência.
 - [x] Preview `https://xterra-gaia-jalapao-2026-vnv8rbqc4-trafegantes-digital.vercel.app` em target `preview`, READY e HTTP 200 via CLI autenticada; a proteção do preview acrescenta `X-Robots-Tag: noindex`.
-- [ ] Revisão independente do diff final, publicação de produção e verificação da URL pública.
+- [x] Reviewer aprovou `7d066bb6e43fc8295ff22576082f68f3b8e79bf4`; findings de replay ao voltar à aba, OG WebP e texto de prévia corrigidos em `61fc915dfb453c24c8d2dd89c207f3a8e36d4db3` e segunda rodada aprovada. O aviso de origem das fotos permanece na página de créditos conforme pedido de retirar rótulos visíveis.
+- [x] Produção `https://xterra-gaia-jalapao-2026-lp.vercel.app/` READY, sem autenticação e sem `noindex`: `/`, `/images/hero-dunas-og.jpg`, `/credits.html` e `/images/estrada-4x4.webp` em HTTP 200. Browser 375×667 sem overflow, CTA do hero no primeiro viewport, `PageView`/`ViewContent` locais e WhatsApp com a mensagem prevista.
+- [ ] Homologação visual/comercial em uso real pelo owner; tags de terceiros, medição remota e métricas de campo de LCP/CLS/INP aguardam dados/configuração futura.
 
 ## Motion upgrade · validação local
 
