@@ -41,3 +41,14 @@ Claude LP Reviewer examinou o diff `3bb95f6..351316f` em leitura, com veredito `
 ## Incidente de deploy inicial
 
 O primeiro `vercel deploy --target preview` num projeto recém-criado foi classificado como production e atribuiu aliases automáticos. Os dois aliases do projeto foram removidos imediatamente; `vercel alias ls` não lista alias XTerra. Um segundo deploy com `vercel deploy` foi classificado e inspecionado como preview. O primeiro deployment imutável ainda existe por URL única; não há domínio de produção associado a ele.
+
+## Motion upgrade · validação local
+
+- [x] A LP e a oferta não foram redesenhadas nem reescritas; alteração limitada a hero, abertura, experiência, roteiro e microinterações.
+- [x] Fotografia real de veículo 4x4 no Jalapão, com autoria, licença e adaptação registradas em `credits.html`.
+- [x] Em 320, 375 e 390 px, sem overflow horizontal; CTA do hero dentro do primeiro viewport em 320×667 e 390×844.
+- [x] Em 1440×900, experiência muda a fotografia do estado ativo e roteiro destaca a data, atualiza a mídia sticky e progride a linha. Mobile oculta a mídia sticky e mantém a timeline fluida.
+- [x] `PageView`, `ViewContent` e `Contact` preservados em clique simulado; sem erro de console observado.
+- [x] `npm run check`, `npm run build` e `git diff --check` passam; JS do motion implementado no arquivo existente, sem dependências adicionais.
+- [ ] Vídeo definitivo do hero e confirmação de proveniência dos seis PNGs da pasta do cliente.
+- [ ] Homologação visual do motion no preview atualizado.

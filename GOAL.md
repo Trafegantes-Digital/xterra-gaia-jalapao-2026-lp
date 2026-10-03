@@ -1,7 +1,7 @@
-STATUS: Preview Vercel funcional e protegido por autenticação; revisão independente pendente.
+STATUS: Motion upgrade por diff em validação local; preview anterior da LP funcional e protegido por autenticação.
 BRANCH: codex/jalapao-2026-lp
-SHA: 0c0bdba (implementação do preview; estado mais recente via git)
+SHA: conferir `git rev-parse HEAD` para o estado mais recente.
 PR: https://github.com/rennancamppos/xterra-gaia-jalapao-2026-lp/pull/1 (draft)
-BLOQUEIO: Produção depende de homologação visual/comercial, domínio e política de privacidade/consentimento antes de tags de terceiros.
-PRÓXIMA AÇÃO: Revisar tracking em SHA fixo, tratar findings e pedir homologação do preview.
-EVIDÊNCIA: Preview READY em https://xterra-gaia-jalapao-2026-414cf8hrl-trafegantes-digital.vercel.app (target preview, Vercel Authentication). HTML, créditos, JS e fotos respondem 200 via vercel curl; noindex ativo. Build Vite, check de conteúdo e QA local passaram.
+BLOQUEIO: Vídeo definitivo do hero e origem dos PNGs com 4x4 pendentes; produção continua dependente de homologação visual/comercial, domínio e consentimento antes de tags de terceiros.
+PRÓXIMA AÇÃO: Concluir QA do motion upgrade, publicar novo preview e pedir homologação visual. Não publicar produção sem aceite.
+EVIDÊNCIA: Ver `docs/MOTION.md` e `docs/QA.md`. Preview anterior da LP já foi verificado; o motion upgrade ainda precisa de URL própria.

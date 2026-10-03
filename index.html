@@ -48,29 +48,33 @@
         <div class="wrap editorial-grid">
           <div class="section-aside"><span class="section-number">01 / EXPEDIÇÃO</span><span class="rule"></span></div>
           <div class="intro-body">
-            <h2 id="intro-title" class="display">SEU 4X4.<br>SUA ESTRADA.<br><em>UM JALAPÃO VIVIDO DE VERDADE.</em></h2>
+            <h2 id="intro-title" class="display"><span class="intro-line" data-motion-line="1">SEU 4X4.</span><span class="intro-line" data-motion-line="2">SUA ESTRADA.</span><em class="intro-line" data-motion-line="3">UM JALAPÃO VIVIDO DE VERDADE.</em></h2>
             <div class="intro-columns">
               <p class="lead">Aqui você não entra em um ônibus para seguir um roteiro turístico convencional.</p>
               <p>Você leva seu próprio 4x4, percorre o Jalapão com um grupo reduzido e passa por dias de estrada, camping, rios, cachoeiras, fervedouros, dunas e experiências locais. A XTerra Gaia cuida da estrutura que torna a expedição possível.</p>
             </div>
+            <figure class="intro-road-photo"><img src="/images/estrada-4x4.webp" alt="Veículo 4x4 em estrada de terra no Jalapão" width="960" height="540" loading="lazy" decoding="async" /><figcaption>ESTRADA DO JALAPÃO / FOTO DOCUMENTAL</figcaption></figure>
           </div>
         </div>
       </section>
 
       <section class="experience" id="experiencia" aria-labelledby="experience-title">
         <div class="experience-image">
-          <img src="/images/fervedouro.webp" alt="Fervedouro fotografado na comunidade Mumbuca, no Jalapão" width="1920" height="1280" loading="lazy" decoding="async" />
+          <img class="scene" data-scene="road" src="/images/estrada-4x4.webp" alt="Veículo 4x4 em estrada de terra no Jalapão" width="960" height="540" loading="lazy" decoding="async" />
+          <img class="scene is-active" data-scene="water" src="/images/fervedouro.webp" alt="Fervedouro do Jalapão" width="1920" height="1280" loading="lazy" decoding="async" />
+          <img class="scene" data-scene="camp" src="/images/rio-novo.webp" alt="Prainha do Rio Novo, região de acampamento no roteiro" width="1920" height="368" loading="lazy" decoding="async" />
+          <img class="scene" data-scene="adventure" src="/images/cachoeira-formiga.webp" alt="Cachoeira da Formiga no Jalapão" width="1920" height="1272" loading="lazy" decoding="async" />
           <span class="photo-label">JALAPÃO, TOCANTINS / FOTO DOCUMENTAL</span>
         </div>
         <div class="experience-text">
           <span class="section-number">02 / A EXPERIÊNCIA</span>
           <h2 id="experience-title" class="display">10 DIAS QUE VÃO MUITO ALÉM DO DESTINO.</h2>
           <div class="experience-list">
-            <div><span>01</span><strong>ESTRADA</strong><p>Trechos em 4x4 atravessando diferentes cenários do Jalapão.</p></div>
-            <div><span>02</span><strong>ÁGUA</strong><p>Fervedouros, rios e cachoeiras.</p></div>
-            <div><span>03</span><strong>CAMPING</strong><p>Pernoites integrados à experiência.</p></div>
-            <div><span>04</span><strong>CULTURA</strong><p>Contato com comunidades e experiências regionais.</p></div>
-            <div><span>05</span><strong>AVENTURA</strong><p>Atividades opcionais como rafting e passeio de boia.</p></div>
+            <div data-scene-target="road"><span>01</span><strong>ESTRADA</strong><p>Trechos em 4x4 atravessando diferentes cenários do Jalapão.</p></div>
+            <div data-scene-target="water"><span>02</span><strong>ÁGUA</strong><p>Fervedouros, rios e cachoeiras.</p></div>
+            <div data-scene-target="camp"><span>03</span><strong>CAMPING</strong><p>Pernoites integrados à experiência.</p></div>
+            <div data-scene-target="water"><span>04</span><strong>CULTURA</strong><p>Contato com comunidades e experiências regionais.</p></div>
+            <div data-scene-target="adventure"><span>05</span><strong>AVENTURA</strong><p>Atividades opcionais como rafting e passeio de boia.</p></div>
           </div>
           <p class="small-note">Você escolhe participar das atividades. Não é obrigatório fazer todos os passeios.</p>
         </div>
@@ -82,19 +86,26 @@
             <span class="section-number">03 / O ROTEIRO</span>
             <h2 id="route-title" class="display">DE PALMAS AO CORAÇÃO DO JALAPÃO <em>— E DE VOLTA.</em></h2>
             <p>De 5 a 14 de novembro. Dez dias de caminho, paradas e acampamentos.</p>
+            <div class="route-media" aria-hidden="true">
+              <img class="is-active" data-route-image="road" src="/images/estrada-4x4.webp" alt="" width="960" height="540" loading="lazy" decoding="async" />
+              <img data-route-image="water" src="/images/fervedouro.webp" alt="" width="1920" height="1280" loading="lazy" decoding="async" />
+              <img data-route-image="river" src="/images/rio-novo.webp" alt="" width="1920" height="368" loading="lazy" decoding="async" />
+              <img data-route-image="falls" src="/images/cachoeira-formiga.webp" alt="" width="1920" height="1272" loading="lazy" decoding="async" />
+              <span>REGISTROS DO JALAPÃO / IMAGENS DE REFERÊNCIA DO PERCURSO</span>
+            </div>
             <div class="route-art" aria-hidden="true"><span>PALMAS</span><i></i><span>JALAPÃO</span><i></i><span>PALMAS</span></div>
           </div>
           <ol class="timeline">
-            <li><time datetime="2026-11-05">05 NOV</time><div><strong>O primeiro encontro</strong><p>Camping Janela do Sol. Encontro do grupo e primeiro pernoite.</p></div></li>
-            <li><time datetime="2026-11-06">06 NOV</time><div><strong>Rumo a São Félix</strong><p>Poço Encantado → Rio Sono → São Félix → Fervedouro Alecrim. Passeio de boia e rafting opcionais.</p></div></li>
-            <li><time datetime="2026-11-07">07 NOV</time><div><strong>Águas de São Félix</strong><p>São Félix e fervedouros. Retorno ao camping do Alecrim.</p></div></li>
-            <li><time datetime="2026-11-08">08 NOV</time><div><strong>Cachoeiras e fervedouros</strong><p>Cachoeira da Prata → fervedouros → Fervedouro Esmeralda.</p></div></li>
-            <li><time datetime="2026-11-09">09 NOV</time><div><strong>Mumbuca e Formiga</strong><p>Comunidade Mumbuca → experiência cultural → fervedouro → Cachoeira da Formiga.</p></div></li>
-            <li><time datetime="2026-11-10">10 NOV</time><div><strong>Dunas ao pôr do sol</strong><p>Dunas do Jalapão → camping no Rio Novo.</p></div></li>
-            <li><time datetime="2026-11-11">11 NOV</time><div><strong>Rio, cachoeira e estrada</strong><p>Cachoeira da Velha → Fazenda Triago → camping.</p></div></li>
-            <li><time datetime="2026-11-12">12 NOV</time><div><strong>Formações do Jalapão</strong><p>Cânion Sussuapara → Pedra Furada → Lagoa do Japonês.</p></div></li>
-            <li><time datetime="2026-11-13">13 NOV</time><div><strong>O último acampamento</strong><p>Retorno ao Camping Janela do Sol.</p></div></li>
-            <li><time datetime="2026-11-14">14 NOV</time><div><strong>Até a próxima estrada</strong><p>Encerramento e liberação do grupo ao amanhecer.</p></div></li>
+            <li data-route-scene="road"><time datetime="2026-11-05">05 NOV</time><div><strong>O primeiro encontro</strong><p>Camping Janela do Sol. Encontro do grupo e primeiro pernoite.</p></div></li>
+            <li data-route-scene="river"><time datetime="2026-11-06">06 NOV</time><div><strong>Rumo a São Félix</strong><p>Poço Encantado → Rio Sono → São Félix → Fervedouro Alecrim. Passeio de boia e rafting opcionais.</p></div></li>
+            <li data-route-scene="water"><time datetime="2026-11-07">07 NOV</time><div><strong>Águas de São Félix</strong><p>São Félix e fervedouros. Retorno ao camping do Alecrim.</p></div></li>
+            <li data-route-scene="falls"><time datetime="2026-11-08">08 NOV</time><div><strong>Cachoeiras e fervedouros</strong><p>Cachoeira da Prata → fervedouros → Fervedouro Esmeralda.</p></div></li>
+            <li data-route-scene="falls"><time datetime="2026-11-09">09 NOV</time><div><strong>Mumbuca e Formiga</strong><p>Comunidade Mumbuca → experiência cultural → fervedouro → Cachoeira da Formiga.</p></div></li>
+            <li data-route-scene="road"><time datetime="2026-11-10">10 NOV</time><div><strong>Dunas ao pôr do sol</strong><p>Dunas do Jalapão → camping no Rio Novo.</p></div></li>
+            <li data-route-scene="river"><time datetime="2026-11-11">11 NOV</time><div><strong>Rio, cachoeira e estrada</strong><p>Cachoeira da Velha → Fazenda Triago → camping.</p></div></li>
+            <li data-route-scene="road"><time datetime="2026-11-12">12 NOV</time><div><strong>Formações do Jalapão</strong><p>Cânion Sussuapara → Pedra Furada → Lagoa do Japonês.</p></div></li>
+            <li data-route-scene="river"><time datetime="2026-11-13">13 NOV</time><div><strong>O último acampamento</strong><p>Retorno ao Camping Janela do Sol.</p></div></li>
+            <li data-route-scene="road"><time datetime="2026-11-14">14 NOV</time><div><strong>Até a próxima estrada</strong><p>Encerramento e liberação do grupo ao amanhecer.</p></div></li>
           </ol>
         </div>
       </section>
