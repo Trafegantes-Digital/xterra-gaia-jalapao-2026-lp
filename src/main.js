@@ -109,6 +109,7 @@ if ('IntersectionObserver' in window && !reducedMotion.matches) {
   if (supportPhoto) reveal.observe(supportPhoto);
   if (introPhoto) reveal.observe(introPhoto);
   if (intro) reveal.observe(intro);
+  for (const image of document.querySelectorAll('.experience-inline-image')) reveal.observe(image);
 }
 
 const clamp = (value) => Math.min(1, Math.max(0, value));
