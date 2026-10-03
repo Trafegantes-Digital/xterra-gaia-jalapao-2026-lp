@@ -42,6 +42,15 @@ Claude LP Reviewer examinou o diff `3bb95f6..351316f` em leitura, com veredito `
 
 O primeiro `vercel deploy --target preview` num projeto recém-criado foi classificado como production e atribuiu aliases automáticos. Os dois aliases do projeto foram removidos imediatamente; `vercel alias ls` não lista alias XTerra. Um segundo deploy com `vercel deploy` foi classificado e inspecionado como preview. O primeiro deployment imutável ainda existe por URL única; não há domínio de produção associado a ele.
 
+## Ajuste final e publicação autorizada
+
+- [x] Pedido de 03/10/2026: remover o cabeçalho mostrado pelo owner, retirar os rótulos de fotografia, tornar o movimento perceptível e publicar.
+- [x] Inspeção local em 320×667, 375×667 e 1440×900: sem cabeçalho, sem rótulos, sem overflow; CTA do hero dentro do primeiro viewport mobile e CTA fixo após o hero.
+- [x] Hero com entrada breve e zoom lento; abertura com reveal; experiência e roteiro mantêm troca de imagens pelo scroll. Aba oculta e `prefers-reduced-motion` não deixam conteúdo invisível.
+- [x] `npm run check`, `npm run build` e `git diff --check` passaram. Nenhuma nova dependência.
+- [x] Preview `https://xterra-gaia-jalapao-2026-vnv8rbqc4-trafegantes-digital.vercel.app` em target `preview`, READY e HTTP 200 via CLI autenticada; a proteção do preview acrescenta `X-Robots-Tag: noindex`.
+- [ ] Revisão independente do diff final, publicação de produção e verificação da URL pública.
+
 ## Motion upgrade · validação local
 
 - [x] A LP e a oferta não foram redesenhadas nem reescritas; alteração limitada a hero, abertura, experiência, roteiro e microinterações.

@@ -18,3 +18,9 @@ Os seis PNGs fornecidos na pasta `Desktop/Claude/clientes/xterragaia` não foram
 - Imagens abaixo do hero continuam em lazy loading; a nova fotografia pesa cerca de 108 KB.
 - O JavaScript usa um único loop com `requestAnimationFrame` para as cenas visíveis e não intercepta scroll nem altera eventos de tracking.
 - Validar no preview: 320/375/390 px sem overflow, CTA do hero no primeiro viewport, experiência e roteiro desktop, texto e preço legíveis, FAQ e WhatsApp intactos.
+
+## Ajuste final autorizado em 03/10/2026
+
+O cabeçalho superior foi removido sem alterar as seções da LP. Os rótulos de “foto documental” e “imagens de referência” saíram da interface; autoria e licença continuam na página de créditos. O hero ganhou entrada breve de texto e CTA, com zoom lento mais perceptível na foto real; a abertura editorial revela as linhas ao entrar no viewport. As trocas de cena na experiência e no roteiro permanecem. Uma aba oculta exibe o conteúdo de imediato, para que animações pausadas pelo navegador não ocultem texto ou CTA. `prefers-reduced-motion` preserva conteúdo estático.
+
+O owner autorizou publicação da LP atual. Como nenhum vídeo real definitivo foi fornecido, o hero usa fotografia real animada; os PNGs de origem incerta continuam fora da página.

@@ -108,6 +108,7 @@ if ('IntersectionObserver' in window && !reducedMotion.matches) {
   }, { threshold: 0.12 });
   if (supportPhoto) reveal.observe(supportPhoto);
   if (introPhoto) reveal.observe(introPhoto);
+  if (intro) reveal.observe(intro);
 }
 
 const clamp = (value) => Math.min(1, Math.max(0, value));
