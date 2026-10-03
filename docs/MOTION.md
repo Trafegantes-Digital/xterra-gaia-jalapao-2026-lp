@@ -10,7 +10,7 @@ O arquivo `/Users/Delsinho/Downloads/PROMPTS CODS Animacao.md` contém exemplos 
 
 `public/images/estrada-4x4.webp` é adaptação de “Nós na poeira do Jalapão (1)”, fotografia de Alexandre Marino, [arquivo no Wikimedia Commons](https://commons.wikimedia.org/wiki/File:N%C3%B3s_na_poeira_do_Jalap%C3%A3o_(1)_(53037649568).jpg), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/). Redimensionada para 960 × 540 e convertida para WebP; autoria e adaptação constam em `public/credits.html`. Não representa uma expedição anterior da XTerra Gaia.
 
-Os seis PNGs fornecidos na pasta `Desktop/Claude/clientes/xterragaia` não foram publicados: a origem documental e o direito de uso ainda precisam de confirmação. O vídeo definitivo do hero também não foi entregue. O hero usa a fotografia real já aprovada na LP, com movimento leve de câmera e parallax ao scroll.
+Os seis PNGs fornecidos na pasta `Desktop/Claude/clientes/xterragaia` não foram publicados: a origem documental e o direito de uso ainda precisam de confirmação. O owner decidiu seguir sem vídeo por enquanto. O hero usa a fotografia real já aprovada na LP, com movimento leve de câmera e parallax ao scroll.
 
 ## Comportamento e prova necessária
 
@@ -23,4 +23,4 @@ Os seis PNGs fornecidos na pasta `Desktop/Claude/clientes/xterragaia` não foram
 
 O cabeçalho superior foi removido sem alterar as seções da LP. Os rótulos de “foto documental” e “imagens de referência” saíram da interface; autoria e licença continuam na página de créditos. O hero ganhou entrada breve de texto e CTA, com zoom lento mais perceptível na foto real; a abertura editorial revela as linhas ao entrar no viewport. As trocas de cena na experiência e no roteiro permanecem. Uma aba oculta exibe o conteúdo de imediato, para que animações pausadas pelo navegador não ocultem texto ou CTA. `prefers-reduced-motion` preserva conteúdo estático.
 
-O owner autorizou publicação da LP atual. Como nenhum vídeo real definitivo foi fornecido, o hero usa fotografia real animada; os PNGs de origem incerta continuam fora da página.
+O owner autorizou publicação da LP atual. O hero usa fotografia real animada; os PNGs de origem incerta continuam fora da página. Não há implementação de vídeo planejada para esta etapa.
