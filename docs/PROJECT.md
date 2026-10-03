@@ -61,7 +61,7 @@ Editorial documental premium: terra, estrada, liberdade e expedição. Areia, of
 
 ## Conversão e tracking
 
-- CTA de preview: WhatsApp `+55 27 99317-4747` mostrado na peça enviada pelo owner. Mensagem: “Olá! Quero consultar disponibilidade para a Expedição Jalapão 2026, de 5 a 14 de novembro. Meu veículo é 4x4.” Confirmar número na homologação comercial antes de produção.
+- CTA publicado: WhatsApp `+55 27 99317-4747` mostrado na peça enviada pelo owner. Mensagem: “Olá! Quero consultar disponibilidade para a Expedição Jalapão 2026, de 5 a 14 de novembro. Meu veículo é 4x4.” A validação comercial independente do número ainda não foi recebida.
 - Preservar `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term` e `fbclid` quando aplicável.
 - `PageView` e `ViewContent` somente para acesso real; `Contact` no clique oficial de WhatsApp. Não disparar `Lead` no clique; `QualifiedLead` após qualificação comercial e `Purchase` após reserva/pagamento confirmados.
 - Pixel, dataset, GA4, GTM, domínio e consentimento: **PENDENTES DE VERIFICAÇÃO**. Reutilizar infraestrutura existente antes de criar qualquer nova.
@@ -72,5 +72,5 @@ Editorial documental premium: terra, estrada, liberdade e expedição. Areia, of
 - Logo recebido em JPEG de 1024 × 1024 com fundo quadriculado incorporado; a página recorta o círculo via CSS.
 - Fotografias do preview: fotos documentais do Jalapão no Wikimedia Commons, com licença CC BY-SA e créditos em `credits.html`. Não são fotos de expedição anterior da XTerra. Fotos próprias podem substituí-las na homologação visual.
 - IDs de GTM/GA4/Meta não identificados. Preview em `noindex`; somente eventos locais `dataLayer`, sem tags de terceiros.
-- Domínio canônico e política de privacidade/consentimento para tags de terceiros.
-- Preview antes de produção; revisão independente para tracking; aceite visual e comercial do owner antes de publicação final.
+- Domínio próprio ainda não comprado. A produção usa `https://xterra-gaia-jalapao-2026-lp.vercel.app/`; após a compra, adicionar o domínio ao projeto Vercel `trafegantes-digital/xterra-gaia-jalapao-2026-lp`, configurar os registros DNS indicados pela plataforma e atualizar `canonical`, `og:url` e `og:image`.
+- Política de privacidade/consentimento para tags de terceiros continua pendente. A LP foi publicada por pedido explícito do owner, com revisão independente concluída e sem tags externas.
