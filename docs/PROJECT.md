@@ -68,6 +68,8 @@ Editorial documental premium: terra, estrada, liberdade e expedição. Areia, of
 
 ## Pendências e gates
 
-- Número de WhatsApp oficial; logo e imagens reais autorizadas ou autorização para fotografias documentais com licença identificada.
+- **Divergência de data:** brief aprovado fixa 05–14/11/2026, enquanto arte de campanha local “WhatsApp Image 2026-10-02 at 16.25.58.jpeg” informa 06–13/11/2026. Confirmar qual é a oferta oficial antes de implementar ou publicar a página.
+- Peça de campanha recebida mostra WhatsApp 27 99317-4747. Confirmar como número oficial para a LP; logo recebido em JPEG de 1024 × 1024 com fundo quadriculado incorporado.
+- Fotografias originais da XTerra ou autorização para fotografias documentais com licença identificada. As artes recebidas são composições promocionais e não comprovam a origem das paisagens.
 - Domínio canônico e política de privacidade/consentimento para tags de terceiros.
 - Preview antes de produção; revisão independente para tracking; aceite visual e comercial do owner antes de publicação final.
