@@ -18,7 +18,7 @@ STATUS: Preview funcional verificado; segunda rodada de review e homologação p
 - [x] Nenhum GTM, GA4 ou Meta Pixel conectado no preview, pois os IDs e a política de consentimento não foram identificados.
 - [ ] Confirmação comercial do número antes de produção.
 - [ ] Recebimento remoto de eventos após configuração aprovada de tags.
-- [ ] Segunda revisão independente do diff de tracking em SHA fixo.
+- [x] Segunda revisão independente feita em `351316f1c22f41107ec2ebed2ada579ed008575d`; findings e resolução abaixo.
 
 ## SEO, desempenho e publicação
 
@@ -33,6 +33,10 @@ STATUS: Preview funcional verificado; segunda rodada de review e homologação p
 - [ ] Preview aprovado pelo owner.
 - [ ] Remover `noindex`, definir canonical e validar domínio somente no deploy de produção aprovado pelo owner.
 - [ ] Produção somente após aceite do owner.
+
+## Revisão independente
+
+Claude LP Reviewer examinou o diff `3bb95f6..351316f` em leitura, com veredito `CHANGES_REQUESTED` por duas frases de copy. A primeira (“sem experiência avançada”) está expressamente no perfil 1 do brief e foi classificada como **NÃO PROCEDENTE**; o brief não cria um requisito de técnica avançada. A segunda (“Cada participante leva seu próprio 4x4”) foi classificada **CORRIGIDA**, pois a oferta é por veículo com até três participantes. Ajustamos também rótulo acessível sem a seta decorativa, dimensão real das fotos, descrição das adaptações de imagem e removemos a transição de cores do CTA após a checagem visual. A atribuição vazia descarta a campanha anterior para impedir mistura entre visitas. A arte do favicon permanece sujeita à homologação visual. O reviewer não executou o preview protegido, build ou browser; essas provas são do Operator.
 
 ## Incidente de deploy inicial
 

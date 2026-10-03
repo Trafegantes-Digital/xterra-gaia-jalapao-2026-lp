@@ -59,7 +59,7 @@ for (const link of document.querySelectorAll('.whatsapp-link')) {
   link.href = whatsappUrl(position);
   link.target = '_blank';
   link.rel = 'noopener noreferrer';
-  link.setAttribute('aria-label', `${link.textContent.trim()} (abre WhatsApp em nova aba)`);
+  link.setAttribute('aria-label', `${link.textContent.replace(/↗/g, "").trim()} (abre WhatsApp em nova aba)`);
   link.addEventListener('click', (event) => recordContact(event, position));
   link.addEventListener('auxclick', (event) => {
     if (event.button === 1) recordContact(event, position);
