@@ -72,3 +72,19 @@
 .motion-hidden .hero .eyebrow,.motion-hidden .hero h1,.motion-hidden .hero-lede,.motion-hidden .hero-copy,.motion-hidden .hero .button,.motion-hidden .hero .microcopy{animation:none;opacity:1;transform:none}
 .hero-entered .hero .eyebrow,.hero-entered .hero h1,.hero-entered .hero-lede,.hero-entered .hero-copy,.hero-entered .hero .button,.hero-entered .hero .microcopy{animation:none;opacity:1;transform:none}
 .motion-hidden .intro-line{opacity:1!important;transform:none!important}
+
+/* A second real frame makes the hero visibly move without video or extra JS. */
+.hero-image-road{opacity:0;transform:scale(1.08);animation:hero-road-sequence 16s ease-in-out infinite}
+@keyframes hero-road-sequence{0%,33%{opacity:0;transform:scale(1.08)}43%,74%{opacity:1;transform:scale(1.02)}84%,100%{opacity:0;transform:scale(1.06)}}
+.experience-inline-image{display:none}
+@media(max-width:620px){
+  .hero-image-road{object-position:55% 50%}
+  .experience-inline-image{display:block;grid-column:2/-1;width:100%;height:172px;object-fit:cover;margin-top:10px}
+  .motion-ready .experience-inline-image{opacity:0;transform:translateY(16px);transition:opacity .65s ease,transform .65s ease}
+  .motion-ready .experience-inline-image.is-revealed{opacity:1;transform:none}
+  .timeline li.is-active{background:linear-gradient(90deg,rgba(189,208,117,.1),transparent 80%)}
+  .timeline li strong{transition:transform .3s ease}
+  .timeline li.is-active strong{transform:translateX(4px)}
+}
+@media(prefers-reduced-motion:reduce){.hero-image-road{display:none}.motion-ready .experience-inline-image{opacity:1;transform:none;transition:none}}
+.motion-hidden .experience-inline-image{opacity:1!important;transform:none!important}
