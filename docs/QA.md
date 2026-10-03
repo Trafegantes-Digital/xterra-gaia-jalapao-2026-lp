@@ -1,6 +1,6 @@
 # QA · XTerra Gaia Jalapão 2026
 
-STATUS: Implementação local validada; preview e review pendentes.
+STATUS: Preview funcional verificado; review e homologação pendentes.
 
 ## Oferta, imagens e layout
 
@@ -24,6 +24,12 @@ STATUS: Implementação local validada; preview e review pendentes.
 - [x] Title, description, Open Graph, `noindex` de preview, um H1, headings e alt text.
 - [ ] Canonical após definição de domínio.
 - [x] `npm run check`, `npm run build` e `git diff --check` sem erro; `npm install` sem vulnerabilidades reportadas.
-- [ ] Console, network, LCP, CLS e INP na URL de preview.
-- [ ] Preview Vercel funcional e aprovado.
+- [x] Console local sem erros após navegação; HTML, créditos, JS e quatro fotos respondem HTTP 200 na URL de preview via `vercel curl` autenticado.
+- [ ] LCP, CLS e INP medidos em navegação representativa; preview protegido por Vercel Authentication.
+- [x] Preview Vercel funcional em `https://xterra-gaia-jalapao-2026-414cf8hrl-trafegantes-digital.vercel.app` (target preview, READY, `noindex`).
+- [ ] Preview aprovado pelo owner.
 - [ ] Produção somente após aceite do owner.
+
+## Incidente de deploy inicial
+
+O primeiro `vercel deploy --target preview` num projeto recém-criado foi classificado como production e atribuiu aliases automáticos. Os dois aliases do projeto foram removidos imediatamente; `vercel alias ls` não lista alias XTerra. Um segundo deploy com `vercel deploy` foi classificado e inspecionado como preview. O primeiro deployment imutável ainda existe por URL única; não há domínio de produção associado a ele.
