@@ -60,7 +60,7 @@ O primeiro `vercel deploy --target preview` num projeto recém-criado foi classi
 - [x] `npm run check`, `npm run build`, `git diff --check`; portal 320/375/1440 sem overflow, CTA do hero dentro do primeiro viewport mobile, troca de hero inspecionada e imagens inline visíveis.
 - [x] Claude LP Reviewer aprovou `4f2edd0338cffb51b4ea0e2d7988aaadccd10669` sem bloqueadores. Finding de alt decorativo e nitidez da foto corrigidos em `7e0d6e1aaafc543acc900a02c30c43a1ee62825a`; segunda rodada aprovada. Reviewer não executou build ou browser.
 - [x] Preview final `https://xterra-gaia-jalapao-2026-ljfny8vii-trafegantes-digital.vercel.app` READY, `preview`, HTTP 200 autenticado. Produção `https://xterra-gaia-jalapao-2026-lp.vercel.app/` READY, HTTP 200 público para página, estrada 4x4 e créditos; browser 375×667 sem overflow e sem erro de console.
-- [ ] Origem/autorização das seis imagens de marca enviadas em 03/10/2026. Não foram publicadas nem descritas como registros reais.
+- [x] Uso das seis imagens de marca autorizado pelo owner em 03/10/2026; a atualização posterior desta nota registra a publicação. Origem fotográfica não verificada.
 
 ## Motion upgrade · validação local
 
@@ -70,6 +70,17 @@ O primeiro `vercel deploy --target preview` num projeto recém-criado foi classi
 - [x] Em 1440×900, experiência muda a fotografia do estado ativo e roteiro destaca a data, atualiza a mídia sticky e progride a linha. Mobile oculta a mídia sticky e mantém a timeline fluida.
 - [x] `PageView`, `ViewContent` e `Contact` preservados em clique simulado; sem erro de console observado.
 - [x] `npm run check`, `npm run build` e `git diff --check` passam; JS do motion implementado no arquivo existente, sem dependências adicionais.
-- [ ] Vídeo definitivo do hero e confirmação de proveniência dos seis PNGs da pasta do cliente.
+- [ ] Origem fotográfica dos seis PNGs da marca não verificada; o owner optou por seguir sem vídeo.
 - [ ] Homologação visual do motion no preview atualizado.
 - [x] Preview do motion `https://xterra-gaia-jalapao-2026-28q6bc7sz-trafegantes-digital.vercel.app` inspecionado como target `preview`, READY; HTML e `estrada-4x4.webp` responderam 200 via `vercel curl` autenticado, com `noindex`.
+
+## Imagens fornecidas pela XTerra Gaia · 03/10/2026
+
+- [x] Owner autorizou o uso das seis imagens enviadas. As fontes PNG foram convertidas para WebP de 118–236 KB; o hero usa 167 KB, com segundo frame de 225 KB e sem vídeo. JPEG OG tem 1200 × 675 e 315 KB.
+- [x] Todas as seis imagens aparecem no layout: veículo no hero, comboio na transição/experiência, veículo na abertura/roteiro, água na experiência, camping na experiência e cachoeira na aventura/chamada final. Alt, rodapé e créditos identificam o material como ilustrativo, sem alegar registro de expedição anterior nem ponto específico do roteiro.
+- [x] Oferta, texto, WhatsApp e código de tracking preservados; `npm run check`, `npm run build` e `git diff --check` passam.
+- [x] Portal local em 320 × 667, 375 × 667 e 1440 × 900: sem overflow horizontal, CTA do hero dentro do primeiro viewport, imagens mobile carregadas, roteiro desktop com mídia sticky e mobile fluido.
+- [x] Preview `https://xterra-gaia-jalapao-2026-qj4i2ywqd-trafegantes-digital.vercel.app/` READY, target `preview`; página HTTP 200 autenticado, com `X-Robots-Tag: noindex`.
+- [x] Claude LP Reviewer revisou `6818ec0704f64f542aad044322bff9107c1a64bf`, com `CHANGES_REQUESTED`: risco de imagens de origem não verificada parecerem registro real; camping sugerir estrutura adicional; imagens antigas sem uso; alt repetido e água com resolução menor. Correções: rótulo visível no rodapé, alt de cena ilustrativa, imagem real de Rio Novo no apoio e rodapé mobile em coluna. Arquivos antigos preservados para não quebrar URLs existentes; 960 px atende à coluna visual de até cerca de 750 px. Segunda rodada **APROVADA** em `47bc7d4a6143f59288afccf1e21f38670103cf2a`, sem finding crítico/alto bloqueante. Risco residual: origem fotográfica desconhecida e rótulo visível só no rodapé; reviewer não executou build/browser.
+- [x] Preview corrigido `https://xterra-gaia-jalapao-2026-rfbdnglqu-trafegantes-digital.vercel.app/` READY. Rodapé em 320 × 667 sem overflow após o ajuste.
+- [ ] Publicação em produção e homologação visual pelo owner.
