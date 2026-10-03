@@ -61,15 +61,16 @@ Editorial documental premium: terra, estrada, liberdade e expedição. Areia, of
 
 ## Conversão e tracking
 
-- CTA oficial: WhatsApp **PENDENTE**. Mensagem: “Olá! Quero consultar disponibilidade para a Expedição Jalapão 2026, de 5 a 14 de novembro. Meu veículo é 4x4.”
+- CTA de preview: WhatsApp `+55 27 99317-4747` mostrado na peça enviada pelo owner. Mensagem: “Olá! Quero consultar disponibilidade para a Expedição Jalapão 2026, de 5 a 14 de novembro. Meu veículo é 4x4.” Confirmar número na homologação comercial antes de produção.
 - Preservar `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term` e `fbclid` quando aplicável.
 - `PageView` e `ViewContent` somente para acesso real; `Contact` no clique oficial de WhatsApp. Não disparar `Lead` no clique; `QualifiedLead` após qualificação comercial e `Purchase` após reserva/pagamento confirmados.
 - Pixel, dataset, GA4, GTM, domínio e consentimento: **PENDENTES DE VERIFICAÇÃO**. Reutilizar infraestrutura existente antes de criar qualquer nova.
 
 ## Pendências e gates
 
-- **Divergência de data:** brief aprovado fixa 05–14/11/2026, enquanto arte de campanha local “WhatsApp Image 2026-10-02 at 16.25.58.jpeg” informa 06–13/11/2026. Confirmar qual é a oferta oficial antes de implementar ou publicar a página.
-- Peça de campanha recebida mostra WhatsApp 27 99317-4747. Confirmar como número oficial para a LP; logo recebido em JPEG de 1024 × 1024 com fundo quadriculado incorporado.
-- Fotografias originais da XTerra ou autorização para fotografias documentais com licença identificada. As artes recebidas são composições promocionais e não comprovam a origem das paisagens.
+- **Data vigente:** 05–14/11/2026, confirmada pelo owner nesta conversa em 02/10/2026. A arte local com 06–13/11 está desatualizada e não deve ser usada.
+- Logo recebido em JPEG de 1024 × 1024 com fundo quadriculado incorporado; a página recorta o círculo via CSS.
+- Fotografias do preview: fotos documentais do Jalapão no Wikimedia Commons, com licença CC BY-SA e créditos em `credits.html`. Não são fotos de expedição anterior da XTerra. Fotos próprias podem substituí-las na homologação visual.
+- IDs de GTM/GA4/Meta não identificados. Preview em `noindex`; somente eventos locais `dataLayer`, sem tags de terceiros.
 - Domínio canônico e política de privacidade/consentimento para tags de terceiros.
 - Preview antes de produção; revisão independente para tracking; aceite visual e comercial do owner antes de publicação final.
