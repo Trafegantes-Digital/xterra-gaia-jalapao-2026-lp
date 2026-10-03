@@ -171,6 +171,7 @@ function updateEditorialMotion() {
 function scheduleEditorialMotion() {
   document.documentElement.classList.toggle('motion-hidden', document.visibilityState === 'hidden');
   if (document.visibilityState === 'hidden') {
+    document.documentElement.classList.add('hero-entered');
     updateEditorialMotion();
     return;
   }

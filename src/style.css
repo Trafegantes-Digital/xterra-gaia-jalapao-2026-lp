@@ -70,4 +70,5 @@
 .motion-ready .intro-line:nth-child(3){transition-delay:.2s}
 @media(prefers-reduced-motion:reduce){.hero .eyebrow,.hero h1,.hero-lede,.hero-copy,.hero .button,.hero .microcopy{animation:none}.motion-ready .intro-line{opacity:1;transform:none}}
 .motion-hidden .hero .eyebrow,.motion-hidden .hero h1,.motion-hidden .hero-lede,.motion-hidden .hero-copy,.motion-hidden .hero .button,.motion-hidden .hero .microcopy{animation:none;opacity:1;transform:none}
+.hero-entered .hero .eyebrow,.hero-entered .hero h1,.hero-entered .hero-lede,.hero-entered .hero-copy,.hero-entered .hero .button,.hero-entered .hero .microcopy{animation:none;opacity:1;transform:none}
 .motion-hidden .intro-line{opacity:1!important;transform:none!important}
