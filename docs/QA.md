@@ -29,7 +29,7 @@ STATUS: Preview funcional verificado; segunda rodada de review e homologação p
 - [x] `npm run check`, `npm run build` e `git diff --check` sem erro; `npm install` sem vulnerabilidades reportadas.
 - [x] Console local sem erros após navegação; HTML, créditos, JS e quatro fotos respondem HTTP 200 na URL de preview via `vercel curl` autenticado.
 - [ ] LCP, CLS e INP medidos em navegação representativa; preview protegido por Vercel Authentication.
-- [x] Preview Vercel funcional em `https://xterra-gaia-jalapao-2026-414cf8hrl-trafegantes-digital.vercel.app` (target preview, READY, `noindex`); nova versão a publicar após correções.
+- [x] Preview Vercel funcional em `https://xterra-gaia-jalapao-2026-n8e242mbs-trafegantes-digital.vercel.app` (target preview, READY, `noindex`), com HTML, créditos, favicon e foto principal em HTTP 200 por acesso autenticado da CLI.
 - [ ] Preview aprovado pelo owner.
 - [ ] Remover `noindex`, definir canonical e validar domínio somente no deploy de produção aprovado pelo owner.
 - [ ] Produção somente após aceite do owner.
