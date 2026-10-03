@@ -2,6 +2,14 @@
 
 STATUS: Produção pública verificada; homologação visual/comercial em uso real pendente.
 
+## Domínio próprio · 03/10/2026
+
+- [x] GoDaddy `xterragaia.com` com NS preservados; apenas A `@` para `216.150.1.1` e `216.150.16.1` e CNAME `www` para `79195c0ee5a4afa5.vercel-dns-016.com` alterados. `_domainconnect` e `_dmarc` preservados; não havia MX.
+- [x] Vercel confirmou ambos os domínios no projeto existente; certificados TLS emitidos. `www` retorna 308 para o apex e preserva UTM.
+- [x] PR #6, código `595fe440878378f4fef8f5dcedc3c77d00344681`, aprovado por Claude Code em leitura e integrado à `main` em `e5c0257689ef1351f4881f9760dbfebcc8aa1ef5`. O reviewer não executou DNS/browser/deploy.
+- [x] Produção `dpl_3aFnbURjHNZX5eVgjKcjNdCEx2sE` READY: HTTPS 200 para `/`, imagem OG, créditos e favicon na borda Vercel; canonical, `og:url` e `og:image` apontam a `https://xterragaia.com/`; sem `noindex`.
+- [ ] Cache de DNS local ainda mostrou os IPs antigos da GoDaddy após a publicação; resolvers públicos e servidores autoritativos já mostraram os novos registros. Confirmar acesso sem resolução forçada após expirar TTL.
+
 ## Oferta, imagens e layout
 
 - [x] Oferta e copy conferidas com o brief aprovado; arte 06–13/11 descartada.
