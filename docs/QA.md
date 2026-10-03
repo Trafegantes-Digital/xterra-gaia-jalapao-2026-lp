@@ -53,6 +53,15 @@ O primeiro `vercel deploy --target preview` num projeto recém-criado foi classi
 - [x] Produção `https://xterra-gaia-jalapao-2026-lp.vercel.app/` READY, sem autenticação e sem `noindex`: `/`, `/images/hero-dunas-og.jpg`, `/credits.html` e `/images/estrada-4x4.webp` em HTTP 200. Browser 375×667 sem overflow, CTA do hero no primeiro viewport, `PageView`/`ViewContent` locais e WhatsApp com a mensagem prevista.
 - [ ] Homologação visual/comercial em uso real pelo owner; tags de terceiros, medição remota e métricas de campo de LCP/CLS/INP aguardam dados/configuração futura.
 
+## Motion visível no mobile · 03/10/2026
+
+- [x] O hero alterna suavemente entre dunas e estrada 4x4 reais, sem vídeo. A fotografia de estrada foi refeita a partir do original 4000 × 2250 de Alexandre Marino no Wikimedia Commons como WebP 1920 × 1080, 319 KB, com prioridade baixa no hero; autor e licença CC BY-SA 2.0 permanecem em `credits.html`.
+- [x] Duas imagens editoriais surgem no fluxo da experiência mobile; o dia ativo ganha realce no roteiro. Nenhuma nova biblioteca, mudança de copy/oferta ou alteração de tracking.
+- [x] `npm run check`, `npm run build`, `git diff --check`; portal 320/375/1440 sem overflow, CTA do hero dentro do primeiro viewport mobile, troca de hero inspecionada e imagens inline visíveis.
+- [x] Claude LP Reviewer aprovou `4f2edd0338cffb51b4ea0e2d7988aaadccd10669` sem bloqueadores. Finding de alt decorativo e nitidez da foto corrigidos em `7e0d6e1aaafc543acc900a02c30c43a1ee62825a`; segunda rodada aprovada. Reviewer não executou build ou browser.
+- [x] Preview final `https://xterra-gaia-jalapao-2026-ljfny8vii-trafegantes-digital.vercel.app` READY, `preview`, HTTP 200 autenticado. Produção `https://xterra-gaia-jalapao-2026-lp.vercel.app/` READY, HTTP 200 público para página, estrada 4x4 e créditos; browser 375×667 sem overflow e sem erro de console.
+- [ ] Origem/autorização das seis imagens de marca enviadas em 03/10/2026. Não foram publicadas nem descritas como registros reais.
+
 ## Motion upgrade · validação local
 
 - [x] A LP e a oferta não foram redesenhadas nem reescritas; alteração limitada a hero, abertura, experiência, roteiro e microinterações.
