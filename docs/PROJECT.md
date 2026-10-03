@@ -72,5 +72,5 @@ Editorial documental premium: terra, estrada, liberdade e expedição. Areia, of
 - Logo recebido em JPEG de 1024 × 1024 com fundo quadriculado incorporado; a página recorta o círculo via CSS.
 - Fotografias do preview: fotos documentais do Jalapão no Wikimedia Commons, com licença CC BY-SA e créditos em `credits.html`. Não são fotos de expedição anterior da XTerra. Fotos próprias podem substituí-las na homologação visual.
 - IDs de GTM/GA4/Meta não identificados. Preview em `noindex`; somente eventos locais `dataLayer`, sem tags de terceiros.
-- Domínio próprio ainda não comprado. A produção usa `https://xterra-gaia-jalapao-2026-lp.vercel.app/`; após a compra, adicionar o domínio ao projeto Vercel `trafegantes-digital/xterra-gaia-jalapao-2026-lp`, configurar os registros DNS indicados pela plataforma e atualizar `canonical`, `og:url` e `og:image`.
+- Domínio próprio `xterragaia.com` comprado na GoDaddy e ligado ao projeto Vercel `trafegantes-digital/xterra-gaia-jalapao-2026-lp`. Produção, canonical, `og:url` e `og:image` usam `https://xterragaia.com/`; `www` redireciona 308 ao apex. Detalhes e provas em `docs/QA.md`.
 - Política de privacidade/consentimento para tags de terceiros continua pendente. A LP foi publicada por pedido explícito do owner, com revisão independente concluída e sem tags externas.
