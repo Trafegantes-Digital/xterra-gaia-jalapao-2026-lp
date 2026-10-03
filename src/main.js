@@ -5,16 +5,19 @@ const message = 'Olá! Quero consultar disponibilidade para a Expedição Jalap�
 const attributionKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'fbclid'];
 const currentParams = new URLSearchParams(window.location.search);
 const attribution = {};
+const hasCurrentAttribution = attributionKeys.some((key) => currentParams.has(key));
 
 for (const key of attributionKeys) {
   const value = currentParams.get(key);
-  if (value) attribution[key] = value;
+  if (value) attribution[key] = value.slice(0, 512);
 }
 
 try {
-  const saved = JSON.parse(sessionStorage.getItem('xterraAttribution') || '{}');
-  for (const key of attributionKeys) {
-    if (!attribution[key] && typeof saved[key] === 'string') attribution[key] = saved[key];
+  if (!hasCurrentAttribution) {
+    const saved = JSON.parse(sessionStorage.getItem('xterraAttribution') || '{}');
+    for (const key of attributionKeys) {
+      if (typeof saved[key] === 'string') attribution[key] = saved[key];
+    }
   }
   sessionStorage.setItem('xterraAttribution', JSON.stringify(attribution));
 } catch {
@@ -30,10 +33,25 @@ function whatsappUrl(position) {
   for (const key of attributionKeys) {
     if (attribution[key]) source.set(key, attribution[key]);
   }
-  if (!source.has('utm_content')) source.set('utm_content', position);
   source.set('cta_position', position);
   const text = `${message}\n\nOrigem: ${source.toString()}`;
   return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+}
+
+let lastContactAt = 0;
+function recordContact(event, position) {
+  const now = Date.now();
+  if (now - lastContactAt < 800) {
+    event.preventDefault();
+    return;
+  }
+  lastContactAt = now;
+  window.dataLayer.push({
+    event: 'Contact',
+    method: 'WhatsApp',
+    ...attribution,
+    cta_position: position,
+  });
 }
 
 for (const link of document.querySelectorAll('.whatsapp-link')) {
@@ -41,14 +59,10 @@ for (const link of document.querySelectorAll('.whatsapp-link')) {
   link.href = whatsappUrl(position);
   link.target = '_blank';
   link.rel = 'noopener noreferrer';
-  link.addEventListener('click', () => {
-    window.dataLayer.push({
-      event: 'Contact',
-      method: 'WhatsApp',
-      ...attribution,
-      utm_content: attribution.utm_content || position,
-      cta_position: position,
-    });
+  link.setAttribute('aria-label', `${link.textContent.trim()} (abre WhatsApp em nova aba)`);
+  link.addEventListener('click', (event) => recordContact(event, position));
+  link.addEventListener('auxclick', (event) => {
+    if (event.button === 1) recordContact(event, position);
   });
 }
 
@@ -58,7 +72,12 @@ const footer = document.querySelector('.footer');
 if (sticky && hero && footer && 'IntersectionObserver' in window) {
   let heroVisible = true;
   let footerVisible = false;
-  const update = () => sticky.classList.toggle('is-visible', !heroVisible && !footerVisible);
+  const update = () => {
+    const visible = !heroVisible && !footerVisible;
+    sticky.classList.toggle('is-visible', visible);
+    sticky.toggleAttribute('inert', !visible);
+    sticky.setAttribute('aria-hidden', String(!visible));
+  };
   new IntersectionObserver(([entry]) => { heroVisible = entry.isIntersecting; update(); }).observe(hero);
   new IntersectionObserver(([entry]) => { footerVisible = entry.isIntersecting; update(); }).observe(footer);
 }
