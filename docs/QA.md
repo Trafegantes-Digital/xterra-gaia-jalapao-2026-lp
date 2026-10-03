@@ -77,8 +77,10 @@ O primeiro `vercel deploy --target preview` num projeto recém-criado foi classi
 ## Imagens fornecidas pela XTerra Gaia · 03/10/2026
 
 - [x] Owner autorizou o uso das seis imagens enviadas. As fontes PNG foram convertidas para WebP de 118–236 KB; o hero usa 167 KB, com segundo frame de 225 KB e sem vídeo. JPEG OG tem 1200 × 675 e 315 KB.
-- [x] Todas as seis imagens aparecem no layout: veículo no hero, comboio na transição/experiência, veículo na abertura/roteiro, água na experiência, camping na experiência/apoio e cachoeira na aventura/chamada final. Alt e página de créditos identificam o material como editorial, sem alegar registro de expedição anterior nem ponto específico do roteiro.
+- [x] Todas as seis imagens aparecem no layout: veículo no hero, comboio na transição/experiência, veículo na abertura/roteiro, água na experiência, camping na experiência e cachoeira na aventura/chamada final. Alt, rodapé e créditos identificam o material como ilustrativo, sem alegar registro de expedição anterior nem ponto específico do roteiro.
 - [x] Oferta, texto, WhatsApp e código de tracking preservados; `npm run check`, `npm run build` e `git diff --check` passam.
 - [x] Portal local em 320 × 667, 375 × 667 e 1440 × 900: sem overflow horizontal, CTA do hero dentro do primeiro viewport, imagens mobile carregadas, roteiro desktop com mídia sticky e mobile fluido.
 - [x] Preview `https://xterra-gaia-jalapao-2026-qj4i2ywqd-trafegantes-digital.vercel.app/` READY, target `preview`; página HTTP 200 autenticado, com `X-Robots-Tag: noindex`.
-- [ ] Revisão independente no SHA fixo, publicação em produção e homologação visual pelo owner.
+- [x] Claude LP Reviewer revisou `6818ec0704f64f542aad044322bff9107c1a64bf`, com `CHANGES_REQUESTED`: risco de imagens de origem não verificada parecerem registro real; camping sugerir estrutura adicional; imagens antigas sem uso; alt repetido e água com resolução menor. Correções: rótulo visível no rodapé, alt de cena ilustrativa, imagem real de Rio Novo no apoio e rodapé mobile em coluna. Arquivos antigos preservados para não quebrar URLs existentes; 960 px atende à coluna visual de até cerca de 750 px. Segunda rodada pendente.
+- [x] Preview corrigido `https://xterra-gaia-jalapao-2026-rfbdnglqu-trafegantes-digital.vercel.app/` READY. Rodapé em 320 × 667 sem overflow após o ajuste.
+- [ ] Publicação em produção e homologação visual pelo owner.

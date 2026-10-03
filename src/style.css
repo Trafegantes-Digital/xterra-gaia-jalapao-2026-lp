@@ -88,3 +88,5 @@
 }
 @media(prefers-reduced-motion:reduce){.hero-image-road{display:none}.motion-ready .experience-inline-image{opacity:1;transform:none;transition:none}}
 .motion-hidden .experience-inline-image{opacity:1!important;transform:none!important}
+
+@media(max-width:620px){.footer-bottom{display:grid;grid-template-columns:1fr;gap:4px}.footer-bottom .credits{max-width:none;text-align:left}}
