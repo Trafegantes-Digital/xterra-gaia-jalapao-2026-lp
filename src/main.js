@@ -54,17 +54,40 @@ function recordContact(event, position) {
   });
 }
 
+const contactDialog = document.querySelector('#contact-confirmation');
+const contactAgreement = document.querySelector('#contact-agreement');
+const contactContinue = document.querySelector('#contact-continue');
+let contactPosition = 'unknown';
+
 for (const link of document.querySelectorAll('.whatsapp-link')) {
-  const position = link.dataset.cta || 'unknown';
-  link.href = whatsappUrl(position);
-  link.target = '_blank';
-  link.rel = 'noopener noreferrer';
-  link.setAttribute('aria-label', `${link.textContent.replace(/↗/g, "").trim()} (abre WhatsApp em nova aba)`);
-  link.addEventListener('click', (event) => recordContact(event, position));
-  link.addEventListener('auxclick', (event) => {
-    if (event.button === 1) recordContact(event, position);
+  link.href = '#contact-confirmation';
+  link.setAttribute('aria-haspopup', 'dialog');
+  link.setAttribute('aria-controls', 'contact-confirmation');
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    contactPosition = link.dataset.cta || 'unknown';
+    contactAgreement.checked = false;
+    contactContinue.disabled = true;
+    contactDialog.showModal();
+    document.documentElement.classList.add('contact-open');
   });
+  link.addEventListener('auxclick', (event) => event.preventDefault());
 }
+contactAgreement.addEventListener('change', () => {
+  contactContinue.disabled = !contactAgreement.checked;
+});
+contactDialog.addEventListener('close', () => {
+  document.documentElement.classList.remove('contact-open');
+  contactAgreement.checked = false;
+  contactContinue.disabled = true;
+});
+contactContinue.addEventListener('click', (event) => {
+  if (!contactAgreement.checked) return;
+  recordContact(event, contactPosition);
+  if (event.defaultPrevented) return;
+  window.open(whatsappUrl(contactPosition), '_blank', 'noopener,noreferrer');
+  contactDialog.close();
+});
 
 const sticky = document.querySelector('.sticky-cta');
 const hero = document.querySelector('#hero');
