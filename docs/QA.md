@@ -2,6 +2,12 @@
 
 STATUS: Produção pública verificada; homologação visual/comercial em uso real pendente.
 
+## Correções do owner · 09/10/2026
+
+- Oferta atualizada: até 4 pessoas, R$ 2.000 para 2 pessoas e R$ 500 por pessoa adicional. Reserva de R$ 1.000 e saldo de R$ 1.000 até 30/10/2026. Hero, como funciona, investimento, inclusão e FAQ reconciliados.
+- Duas novas imagens fornecidas pelo owner: estrada com barracas fechadas e camping com barracas abertas. Arquivos com URLs novas para evitar cache da versão anterior; OG atualizado.
+- Check de conteúdo e build aprovados. Validação mobile e publicação registradas no PR desta correção.
+
 ## Domínio próprio · 03/10/2026
 
 - [x] GoDaddy `xterragaia.com` com NS preservados; apenas A `@` para `216.150.1.1` e `216.150.16.1` e CNAME `www` para `79195c0ee5a4afa5.vercel-dns-016.com` alterados. `_domainconnect` e `_dmarc` preservados; não havia MX.
