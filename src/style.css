@@ -90,3 +90,21 @@
 .motion-hidden .experience-inline-image{opacity:1!important;transform:none!important}
 
 @media(max-width:620px){.footer-bottom{display:grid;grid-template-columns:1fr;gap:4px}.footer-bottom .credits{max-width:none;text-align:left}}
+
+/* Contact confirmation, sized from the mobile viewport. */
+.contact-highlight{position:relative;animation:contact-glow 3s ease-in-out infinite}
+@keyframes contact-glow{0%,100%{box-shadow:0 0 0 0 rgba(189,208,117,.2)}50%{box-shadow:0 0 0 9px rgba(189,208,117,0)}}
+.contact-open{overflow:hidden}
+.contact-dialog{width:min(540px,calc(100% - 28px));max-height:calc(100dvh - 28px);overflow:auto;padding:28px;border:0;border-radius:14px;background:var(--cream,#f7f4eb);color:#19211b;box-shadow:0 20px 80px #0006}
+.contact-dialog::backdrop{background:rgba(12,23,16,.78);backdrop-filter:blur(4px)}
+.contact-dialog[open]{animation:contact-enter .22s ease-out}
+@keyframes contact-enter{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.contact-dialog form{display:flex;justify-content:flex-end;margin:-12px -12px 8px}
+.dialog-close{width:44px;height:44px;border:0;border-radius:50%;background:#e5e0d1;color:#19211b;font-size:28px;cursor:pointer}
+.contact-dialog h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.1rem,8vw,2.9rem);line-height:1.05;margin:12px 0}
+.contact-dialog p{font-size:.9rem;line-height:1.5}
+.contact-facts{margin:20px 0}.contact-facts div{padding:10px 0;border-bottom:1px solid #19211b26}.contact-facts dt{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:#59614e}.contact-facts dd{margin:3px 0 0;font-size:.95rem;font-weight:600;line-height:1.4}
+.contact-question{font-weight:700}.contact-agreement{display:flex;align-items:flex-start;gap:12px;margin:16px 0;font-size:.9rem;line-height:1.45;cursor:pointer}.contact-agreement input{flex-shrink:0;width:22px;height:22px;accent-color:#345e39;margin-top:2px}
+.contact-continue{width:100%;border:0;cursor:pointer;font-family:inherit;font-size:.9rem}.contact-continue:disabled{opacity:.45;cursor:not-allowed}.contact-note{color:#59614e;font-size:.75rem!important;margin:12px 0 0}
+.contact-dialog :focus-visible{outline:3px solid #345e39;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){.contact-highlight,.contact-dialog[open]{animation:none}}

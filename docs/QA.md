@@ -2,6 +2,12 @@
 
 STATUS: Produção pública verificada; homologação visual/comercial em uso real pendente.
 
+## Confirmação de contato · 09/10/2026
+
+- CTA final alterado para Fale conosco pelo WhatsApp, com animação discreta e suporte a movimento reduzido.
+- Todos os CTAs abrem confirmação de data, ocupação, valores e pagamento. WhatsApp e evento Contact somente após concordância explícita; UTMs e posição do CTA preservados.
+- Até 4 pessoas por veículo; R$ 2.000 para até 2 pessoas e R$ 500 por pessoa extra.
+
 ## Correções do owner · 09/10/2026
 
 - Oferta atualizada: até 4 pessoas, R$ 2.000 para 2 pessoas e R$ 500 por pessoa adicional. Reserva de R$ 1.000 e saldo de R$ 1.000 até 30/10/2026. Hero, como funciona, investimento, inclusão e FAQ reconciliados.
