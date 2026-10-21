@@ -46,6 +46,17 @@ function recordContact(event, position) {
     return;
   }
   lastContactAt = now;
+  // Count only the confirmed handoff to WhatsApp, for this Pixel only.
+  try {
+    if (typeof window.fbq === 'function') {
+      window.fbq('trackSingle', '3041706719510839', 'Contact', {
+        content_name: 'Expedição Jalapão 2026',
+        cta_position: position,
+      });
+    }
+  } catch {
+    // A blocked marketing script must never prevent the WhatsApp handoff.
+  }
   window.dataLayer.push({
     event: 'Contact',
     method: 'WhatsApp',

@@ -2,6 +2,13 @@
 
 STATUS: Produção pública verificada; homologação visual/comercial em uso real pendente.
 
+## Meta Pixel · 21/10/2026
+
+- Pixel 3041706719510839 fornecido e ativação solicitada pelo owner via MCP. Snippet base e fallback noscript de PageView adicionados uma única vez.
+- Contact enviado ao Pixel específico ao confirmar e seguir ao WhatsApp, nunca ao apenas abrir o modal. Proteção contra duplo clique e fallback se o Pixel estiver bloqueado; sem Lead/Purchase e sem dados pessoais adicionais.
+- Verificação isolada do handler: envio único, deduplicação e continuidade com fbq ausente ou bloqueado aprovados. Build e publicação remotos serão registrados no PR.
+- Instalação e disparo não comprovam recebimento no Gerenciador de Eventos nem configuração de campanha; homologação Meta permanece separada.
+
 ## Confirmação de contato · 09/10/2026
 
 - CTA final alterado para Fale conosco pelo WhatsApp, com animação discreta e suporte a movimento reduzido.
